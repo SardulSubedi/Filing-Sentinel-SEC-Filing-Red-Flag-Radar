@@ -1,4 +1,6 @@
-# Filing Sentinel
+# Filing Sentinel — application docs
+
+> **Repository overview:** see the [root README](../README.md) (that file is what GitHub shows on the repo homepage).
 
 Filing Sentinel is a **SEC EDGAR anomaly scanner** built for fundamental investors. It pulls **structured XBRL facts** and **recent 10-K/10-Q filings**, then runs:
 
@@ -43,7 +45,15 @@ This project is intended for research and workflow acceleration — **not invest
 
 ## Quick Start (Windows / PowerShell)
 
-From the `filing-sentinel` directory:
+From the **repository root**:
+
+```powershell
+cd filing-sentinel
+python -m pip install -r requirements.txt
+streamlit run app.py
+```
+
+Or, if your shell is already in `filing-sentinel/`:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -100,7 +110,19 @@ Important:
 
 ---
 
-## Project Layout
+## Project layout
+
+**Repository (top level):**
+
+```
+.
+├── README.md                 # Short overview for GitHub
+├── filing-sentinel/          # This application (contents below)
+├── .agents/                  # Optional Cursor skills
+└── skills-lock.json
+```
+
+**Inside `filing-sentinel/`:**
 
 ```
 filing-sentinel/
